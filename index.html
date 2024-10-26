@@ -9,40 +9,43 @@
 <body>
     <nav class="bg-green-100 p-3 flex justify-between items-center">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  md:hidden">
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          
-        <ul class="flex gap-5 text-gray-600 hidden md:flex ">
+          <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
-                <a class="hover:underline" href="#">Home</a>
+                <a class="hover:underline" href="index.html.html">Home</a>
             </li>
             <li>
-                <a class="hover:underline" href="#"></a>
-                <a href='product.html'>
-                    <button>Product</button>
-                </a>
+                <a class="hover:underline" href="product.html">Product</a>
             </li>
             <li>
-                <a class="hover:underline" href="#"></a>
-                <a href='contactpage.html'>
-                    <button>Contacts</button>
-                </a>
+                <a class="hover:underline" href="contactpage.html">Contacts</a>
             </li>
         </ul>
+          
+        
     </nav>
-            <div class="bg-green-100 px-4 mb-5 flex justify-center">
-                <div>
-                
-                <p> We offer you a wide range of Artificial and Natural flowers</p>
-                <h2 class="font-bold text-3x1 mb-5">Plants for your interior</h2>
-                <button class="bg-black text-white p-2 rounded mb-5">Shop now</button>
-                <button class="text-black border border-black p-2 rounded ">Watch vedio</button>
-                <p>160+ Plant species | 100+ Clients</p>
-            </div>
-                <div class="hidden px-6 md:flex">
-                    <img src="./picturespot/1.jpeg" alt="header image" class="w-40 h-40">
-                </div>
+<!--sidenav-->
+    <section id="sidenav" class="bg-green-50 fixed z-20 top-0 transisition-all duration-1000" style="height:100vh; width:50%;right:-50%">
+        <div class="text-right p-5">
+            <p id="close" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex gap-10 text-gray-600  flex-col items-center cursor-pointer">
+            <li><a class="hover:underline" href=index.html.html>Home</a></li>
+            <li><a class="hover:underline" href=product.html>Products</a></li>
+            <li><a class="hover:underline" href=contactpage.html>Contact Page</a></li>
+        </ul>
+    </section>
+    <div class="bg-green-100 px-4 mb-5 flex justify-center"><div>
+        <p> We offer you a wide range of Artificial and Natural flowers</p>
+        <h2 class="font-bold text-3x1 mb-5">Plants for your interior</h2>
+        <button class="bg-black text-white p-2 rounded mb-5">Shop now</button>
+        <button class="text-black border border-black p-2 rounded ">Watch vedio</button>
+        <p>160+ Plant species | 100+ Clients</p>
+    </div>
+        <div class="hidden px-6 md:flex">
+        <img src="./picturespot/1.jpeg" alt="header image" class="w-40 h-40"></div>
             </div>
             <section class="text-center px-6">
                 <h1 class="text-3x1 font-bold mt-5">About us</h1>
@@ -138,7 +141,6 @@
 
 
             </div>
-                
-            
+    <script src="index.js"></script>            
 </body>
 </html>
